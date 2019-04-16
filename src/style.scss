@@ -1,40 +1,48 @@
 $fontcolor:  rgb(10%, 10%, 10%);
-$backgroundcolor: rgb(98%, 98%, 98%);
-
+$backgroundcolor: rgb(230, 230, 230);
 
 body {
   font-family: "Roboto", sans-serif;
   color: $fontcolor;
   background-color: $backgroundcolor;
-  margin: 50px;
+  
 }
 
-
 #search-bar {
-  margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    margin-bottom: 20px;
+    padding: 40px 50px;
+    
+}
 
-  input {
+#search-bar input {
     font-size: 1.5em;
-    border-radius: .25em;
-  }
+    border-radius: 5px;;
 }
 
 #video-detail {
-  width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(22, 22, 22);;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 #video-section {
-  display: flex;
-
-  li {
-    list-style: none;
-    cursor: pointer;
+    margin: 50px;
     display: flex;
-    width: 25vw;
-    padding: 10px;
-  }
+}
 
-  li:hover {
+#video-section li {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(22, 22, 22);
+    width: 30vw;
+    list-style: none;
+    display: flex;
+    padding: 15px;   
+}
+
+#video-section li:hover {
     background: darken( $backgroundcolor, 10% );
-  }
 }

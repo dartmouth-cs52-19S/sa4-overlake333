@@ -16,8 +16,12 @@ class App extends Component {
       videos: [],
       selectedVideo: null,
     };
+
+    youtubeSearch('pixar').then((videos) => {
+      console.log(videos);
+    });
+
     this.search = debounce(this.search, 300);
-    this.search('pixar');
   }
 
   search = (text) => {
